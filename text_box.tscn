@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://ba0prm8idarha"]
+
+[ext_resource type="Script" path="res://text_box.gd" id="1_nvdun"]
+[ext_resource type="PackedScene" uid="uid://c0c480bos6ivv" path="res://script_interpreter.tscn" id="2_87bot"]
+[ext_resource type="PackedScene" uid="uid://bll487x6p11uf" path="res://statements.tscn" id="3_gjhbj"]
+
+[node name="TextBox" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 123.0
+offset_top = 820.0
+offset_right = -84.0
+offset_bottom = -103.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nvdun")
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="."]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="BackgroundLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="BackgroundLayer"]
+
+[node name="TextLayer" type="CanvasLayer" parent="."]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="TextLayer"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextLayer"]
+offset_right = 1.0
+bbcode_enabled = true
+
+[node name="Scripts" parent="." instance=ExtResource("2_87bot")]
+script = null
+
+[node name="Statements_01" parent="Scripts" instance=ExtResource("3_gjhbj")]
+file_path = "res://assets/scripts/01.txt"
+
+[node name="Statements_02" parent="Scripts" instance=ExtResource("3_gjhbj")]
+file_path = "res://assets/scripts/02.txt"

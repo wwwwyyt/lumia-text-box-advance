@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bll487x6p11uf"]
+
+[ext_resource type="Script" path="res://statements.gd" id="1_qt3fj"]
+[ext_resource type="PackedScene" uid="uid://dq0s3vc12xwk5" path="res://script_parser.tscn" id="2_onlw1"]
+
+[node name="Statements" type="Node"]
+script = ExtResource("1_qt3fj")
+
+[node name="ScriptParser" parent="." instance=ExtResource("2_onlw1")]
