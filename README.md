@@ -27,6 +27,10 @@
 
 在原有的 Lumia Text Box 的基础上，使用 Lumia Scripts Parser 作为脚本解析器。这样可以直接使用 csv 格式的文本文件作为对话脚本。
 
+## 25-08-22
+
+现在可以在 TextBox 的检查器调整文本显示速度，也就是一句话用多少秒显示完整。
+
 # BBCode 的使用
 
 `[i][/i]` 斜体
@@ -74,4 +78,3 @@ list example.
 
 You can also create custom tags/effects, or customize behavior of [lb]url[rb] tags on click. For full reference, [color=aqua][url=https://docs.godotengine.org/en/latest/tutorials/gui/bbcode_in_richtextlabel.html]check the documentation.[/url][/color]
 ```
-

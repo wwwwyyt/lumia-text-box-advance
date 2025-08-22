@@ -4,6 +4,7 @@ extends Control
 @export var normal_font_size: int = 40
 @export var font_color: Color = Color.WHITE
 @export var background_color: Color = Color.BLACK
+@export var text_speed: float = 0.2
 
 var scripts: Array[Node]
 var script_index = 0
@@ -66,7 +67,7 @@ func _display_next_statements():
 var tween
 var current_text = ""
 func _text_transition(next_text: String=""):
-	var time = len(next_text) * 0.1
+	var time = text_speed
 	var text_label = $TextLayer/RichTextLabel
 	if tween and tween.is_running():
 		tween.kill()
