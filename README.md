@@ -10,7 +10,9 @@
 
 ## 25-05-04
 
-在原有的 Lumia Text Box 的基础上，使用 Lumia Scripts Parser 作为脚本解析器。这样可以直接使用 csv 格式的文本文件作为对话脚本。脚本默认放置在 /assets/scripts 文件夹中，解析器会按照文件名排序，依次读取。
+在原有的 Lumia Text Box 的基础上，使用 Lumia Scripts Parser 作为脚本解析器。这样可以直接使用 csv 格式的文本文件作为对话脚本。
+
+使用时，将脚本路径写入 Scripts 结点下的 Statements 结点的 File Path 属性中，解析器就会按 Statements 结点的顺序读取脚本。
 
 ## 25-02-11
 
